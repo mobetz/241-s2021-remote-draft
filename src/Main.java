@@ -126,19 +126,33 @@ public class Main {
         String result = "";
         int counter;
         for ( counter=0; counter < limit; counter++ ) {
-            if ( counter % 3 == 0 && counter % 5 == 1) {
-                result = result + " " + "FizzBuzz";
-            } else if ( counter % 3 == 0 ) {
-                result = result + " " + "Fizz";
-            }
-            else if ( counter % 5 == 0 ) {
-                result = result + " " + "Buzz";
-            } else {
-                result = result + " " + counter;
-            }
+         result = result + " " + generate_single_word(counter);
         }
         return result;
     }
+
+    /*
+    When we're in an alternate commit, we can even even choose to make a different branching timeline of changes.
+    Say, for instance, in th is alternate universe, instead of writing all those comments, we want to spend our time
+    breaking our fizzbuzz into two separate functions:
+     */
+
+    public static String generate_single_word( int counter ) {
+        if ( counter % 3 == 0 && counter % 5 == 1) {
+            return "FizzBuzz";
+        } else if ( counter % 3 == 0 ) {
+            return "Fizz";
+        }
+        else if ( counter % 5 == 0 ) {
+            return "Buzz";
+        } else {
+            return String.valueOf(counter);
+        }
+    }
+
+    /*
+    We can then commit this alternate timeline, the same exact way we committed our earlier commit.
+     */
 
 
     /*
