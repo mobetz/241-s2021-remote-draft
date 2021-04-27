@@ -68,15 +68,39 @@ public class Main {
 
         However, by default, the git repo won't save anything. The git repository creates a 'stage' with all the files
         that exist in this folder. This stage has information about which aren't tracked yet at all, which are tracked
-        and have been changed, and which will be added/removed.
+        and have been changed, and which will be added/removed. We can always view the current statis of the stage with
+        the 'git status' command.
 
 
         If we want to save a file, we have to do two steps:
            - Add the file to the list of things from our stage that we want to commit.
            - Perform the actual commit.
 
-        Now
+        There are a few different ways to add the file. We can either use 'git add <file>' in the terminal, right click
+        the file and select add, or go directly to the commit dialog and check all the checkboxes for the files we want
+        to commit.
 
+        Then, we can commit, either by typing 'git commit -m "<message>"', or by going to the Git menu and selecting the
+        "Commit" option. In the commit dialog, we're able to write a helpful descriptive message of the changes we made.
+
+        Afterward, we can hit 'commit' to save those changes! Now those changes are saved, and we can even see a history
+        of our past changes in the git panel under the "Log" tab.
+        (Questions?)
+
+        Now, let's say we want to update FizzBuzz to instead return a string rather than print out immediately.
+
+        Now, let's go take a look at our stage again.
+        (What do we expect to see?)
+        We can see that our Main.java file appears in the list of unstaged changes. Let's take a look at what the file
+        looks like when we view it.
+        (What do you think those lines mean?)
+        Our file is showing us line by line what changed in the file:
+           - Green lines are the 'new' version of the code.
+           - Grey/Red lines are the 'old' version of the code.
+
+        In addition to viewing this in IntelliJ, we can view the same thing using the 'git diff' command.
+        (How would I save these changes?)
+        To save the changes and my second version of the command, I can just create a second commit.
          */
     }
 
@@ -98,6 +122,26 @@ public class Main {
     }
      */
 
+    public static String fizzbuzz(int limit) {
+        String result = "";
+        int counter;
+        for ( counter=0; counter < limit; counter++ ) {
+            if ( counter % 3 == 0 && counter % 5 == 1) {
+                result = result + " " + "FizzBuzz";
+            } else if ( counter % 3 == 0 ) {
+                result = result + " " + "Fizz";
+            }
+            else if ( counter % 5 == 0 ) {
+                result = result + " " + "Buzz";
+            } else {
+                result = result + " " + counter;
+            }
+        }
+        return result;
+    }
+
+
+    /*
     public static void fizzbuzz(int limit) {
         int counter;
         for ( counter=0; counter < limit; counter++ ) {
@@ -113,7 +157,6 @@ public class Main {
             }
         }
     }
-
-
+     */
 
 }
