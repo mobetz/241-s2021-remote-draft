@@ -158,6 +158,8 @@ public class Main {
     /*
     Now, let's go look at the log again.
     (What do you notice?)
+    We've ended up with two different 'branches' in the history of our commit! Let's try checking out the earlier one
+    again.
      */
 
     /*
