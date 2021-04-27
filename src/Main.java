@@ -68,7 +68,7 @@ public class Main {
 
         However, by default, the git repo won't save anything. The git repository creates a 'stage' with all the files
         that exist in this folder. This stage has information about which aren't tracked yet at all, which are tracked
-        and have been changed, and which will be added/removed. We can always view the current statis of the stage with
+        and have been changed, and which will be added/removed. We can always view the current status of the stage with
         the 'git status' command.
 
 
@@ -84,7 +84,7 @@ public class Main {
         "Commit" option. In the commit dialog, we're able to write a helpful descriptive message of the changes we made.
 
         Afterward, we can hit 'commit' to save those changes! Now those changes are saved, and we can even see a history
-        of our past changes in the git panel under the "Log" tab.
+        of our past changes in the git panel under the "Log" tab, or the 'git log' command.
         (Questions?)
 
         Now, let's say we want to update FizzBuzz to instead return a string rather than print out immediately.
@@ -101,6 +101,20 @@ public class Main {
         In addition to viewing this in IntelliJ, we can view the same thing using the 'git diff' command.
         (How would I save these changes?)
         To save the changes and my second version of the command, I can just create a second commit.
+
+        Now, let's go look at our log again.
+
+        In the log, we can see that both changes are listed.
+        If we right click on the files on the right of the panel, we can compare the version from any commit to the
+        current version of the file. (we can also do this with git diff -c <commit_id>.)
+
+        (Questions?)
+
+        If we want to 'rewind' time, we are able to do that by 'checking out' to reload an earlier one of our save
+        point commits. We can do this by right clicking the commit we want in the log, or performing 'git checkout <id>'.
+
+        Before we do that, we should make sure we save everything we're working on right now to a commit!
+
          */
     }
 
