@@ -133,8 +133,13 @@ public class Main {
 
     /*
     When we're in an alternate commit, we can even even choose to make a different branching timeline of changes.
-    Say, for instance, in th is alternate universe, instead of writing all those comments, we want to spend our time
-    breaking our fizzbuzz into two separate functions:
+    Say, for instance, in this alternate universe, instead of writing all those comments, we want to spend our time
+    breaking our fizzbuzz into two separate functions.
+
+    The first thing we will want to do is declare our new branch, either with the 'git branch <branchname>' command, or
+     by clicking the plus on the branch list in the left panel of the git log window.
+
+    Then, we can do our work, and commit as normal:
      */
 
     public static String generate_single_word( int counter ) {
@@ -151,9 +156,9 @@ public class Main {
     }
 
     /*
-    We can then commit this alternate timeline, the same exact way we committed our earlier commit.
+    Now, let's go look at the log again.
+    (What do you notice?)
      */
-
 
     /*
     public static void fizzbuzz(int limit) {
