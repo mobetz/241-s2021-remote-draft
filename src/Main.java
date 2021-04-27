@@ -124,6 +124,12 @@ public class Main {
 
         To merge in IntelliJ, we can right click the other branch we want to merge, and select the merge option.
 
+        If we look at the diff panel for this merge, we can see three panes.
+        (What do you think each means?)
+        The panes on the left and right show us both timelines, and the middle shows the final result.
+        Sometimes, you might have to make touch ups here when git can't figure out which copy of the code you want to
+        use. However, everything looks good for us, so we're ready to commit!
+
          */
     }
 
