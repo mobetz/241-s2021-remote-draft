@@ -46,6 +46,13 @@ public class Collaboration {
         history. However, every commit is visible, and we can see the whole history of our repository.
         (Questions?)
 
+        (Commit, show remote again.)
+        We can see that every time we commit, the changes don't make it to the server until we push again. In fact,
+        in our Log history, we can even see where the "remote" copy of master lives.
+        (Can anyone identify what shows us this? origin/master tag.)
+        We need to push again to make our changes appear.
+
+
          */
     }
 
