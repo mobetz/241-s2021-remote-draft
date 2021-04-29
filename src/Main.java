@@ -20,7 +20,7 @@ software is duplicated.
 Commit - The smallest unit of change in a VCS is called a "commit". A commit is stored as a list of differences between
 a previous version and the new current version, along with metadata about who made a change and when.
 
-Repository - A repository iis the name for an entire commit history related to a particular software project.
+Repository - A repository is the name for an entire commit history related to a particular software project.
 
 Branch - A series of commits that form a linear timeline is called a 'branch'. All branches of the same repository
 share a single common ancestor.
@@ -130,6 +130,14 @@ public class Main {
         Sometimes, you might have to make touch ups here when git can't figure out which copy of the code you want to
         use. However, everything looks good for us, so we're ready to commit!
 
+        (What do you notice about the log timeline now?)
+
+        (Any final questions?)
+        Git is an invaluable tool for helping us keep track of the way our code has changed over time. We can even use
+        branches to carry out different 'experiments' on our code, and only keep those that work out!
+
+        Next class, we'll see how git also has useful features for letting multiple people work together.
+
          */
     }
 
@@ -142,7 +150,7 @@ public class Main {
             }
             else if ( counter % 5 == 0 ) {
                 System.out.println("Buzz");
-            } else if ( counter % 3 == 0 && counter % 5 == 1) {
+            } else if ( counter % 3 == 0 && counter % 5 == 0) {
                 System.out.println("FizzBuzz");
             } else {
                 System.out.println(counter);
